@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpinaczAgencjaProjekt_v2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/791e047716.js" crossorigin="anonymous"></script>
+    <script src="code.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav id="nav" class="page-navigation">
+            <div class="page-navigation__brand">
+                <img class="nav-logo nav-logo--black" src="./assets/logo/logo-header-black.svg" alt="">
+                <img class="nav-logo nav-logo--white" src="./assets/logo/logo-header-white.svg" alt="">
+            </div>
+            <ul class="page-navigation__items">
+                <li class="page-navigation__item"><a href="#home" class="page-navigation__link">Początek</a></li>
+                <li class="page-navigation__item"><a href="#services" class="page-navigation__link">Oferta</a></li>
+                <li class="page-navigation__item"><a href="#about" class="page-navigation__link">O nas</a></li>
+                <li class="page-navigation__item"><a href="#team" class="page-navigation__link">Zespół</a></li>
+                <li class="page-navigation__item"><a href="#contact" class="page-navigation__link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="content-section home">
+            <div class="section-container home-container">
+                <div class="background-cover"></div>
+                <div class="home-content">
+                    <h1 class="home-content__header">Spinamy marketingową<span>rzeczywistość</span></h1>
+                    <div class="home-content__logo">
+                        <img src="./assets/logo/logo.png" alt="Agencja Spinacz Logo" class="home-content__logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="content-section services">
+            <div class="bg-dark"></div>
+            <div class="section-container">
+                <div class="services-container">
+                    <div class="content-section__header content-section__header--light">
+                        <h1 class="content-section__head">Oferta</h1>
+                    </div>
+                    <div class="content-section__body content-section__body--services">
+                        <ul class="services__items">
+                            <li class="services__item" onmouseover="serviceChangeActive(event,'swiadomosc-marki')">
+                                <div class="serivces__icon">
+                                    <i class="fas fa-lightbulb icon__element"></i>
+                                </div>
+                                <h3 class="services__title">Świadomość<span>marki</span></h3>
+                            </li>
+                            <li class="services__item" onmouseover="serviceChangeActive(event,'media-spolecznosciowe')">
+                                <div class="serivces__icon">
+                                    <i class="fas fa-hashtag icon__element"></i>
+                                </div>
+                                <h3 class="services__title">Media<span>Społecznościowe</span></h3>
+                            </li>
+                            <li class="services__item" onmouseover="serviceChangeActive(event,'audyt')">
+                                <div class="serivces__icon">
+                                    <i class="fas fa-search icon__element"></i>
+                                </div>
+                                <h3 class="services__title">Audyt</h3>
+                            </li>
+                            <li class="services__item" onmouseover="serviceChangeActive(event,'strategia-marketingowa')">
+                                <div class="serivces__icon">
+                                    <i class="fas fa-chess icon__element"></i>
+                                </div>
+                                <h3 class="services__title">Strategia<span>Marketingowa</span></h3>
+                            </li>
+                            <li class="services__item" onmouseover="serviceChangeActive(event,'kreacja-graficzna')">
+                                <div class="serivces__icon">
+                                    <i class="fas fa-palette icon__element"></i>
+                                </div>
+                                <h3 class="services__title">Kreacja<span>Graficzna</span></h3>
+                            </li>
+                            <li class="services__item" onmouseover="serviceChangeActive(event,'szkolenia')">
+                                <div class="serivces__icon">
+                                    <i class="fas fa-user-check icon__element"></i>
+                                </div>
+                                <h3 class="services__title">Szkolenia</h3>
+                            </li>
+                        </ul>
+                        <div class="services__descriptions">
+                            <button class="btn arrow btn-arrow--left">
+                                <i class="fas fa-angle-left"></i>
+                            </button>
+                            <ul class="descriptions__items">
+                                <li id="swiadomosc-marki" class="descriptions__item descriptions__item--active">
+                                    <h2 class="description__title">Świadomość marki</h2>
+                                    <p class="services__about">1 Świadomość marki Budujemy strategie komunikacyjne, obsługujemy profile oraz prowadzimy kampanie
+                                        reklamowe w mediach społecznościowych takich jak Facebook, Instagram czy
+                                        LinkedIn.
+                                        Czy wiesz, że z samego portalu Facebook korzysta obecnie 47% Polaków? Reklama na
+                                        tej platformie jest efektywna, ponieważ pozwala na precyzyjne dotarcie do określonej
+                                        grupy odbiorców i zaprezentowanie jej Twojej oferty.</p>
+                                </li>
+                                <li id="media-spolecznosciowe" class="descriptions__item">
+                                    <h2 class="description__title">Media Społecznościowe</h2>
+                                    <p class="services__about">2 Media Społecznościowe Budujemy strategie komunikacyjne, obsługujemy profile oraz prowadzimy kampanie
+                                        reklamowe w mediach społecznościowych takich jak Facebook, Instagram czy
+                                        LinkedIn.
+                                        Czy wiesz, że z samego portalu Facebook korzysta obecnie 47% Polaków? Reklama na
+                                        tej platformie jest efektywna, ponieważ pozwala na precyzyjne dotarcie do określonej
+                                        grupy odbiorców i zaprezentowanie jej Twojej oferty.</p>
+                                </li>
+                                <li id="audyt" class="descriptions__item">
+                                    <h2 class="description__title">Audyt</h2>
+                                    <p class="services__about">3 Audyt Budujemy strategie komunikacyjne, obsługujemy profile oraz prowadzimy kampanie
+                                        reklamowe w mediach społecznościowych takich jak Facebook, Instagram czy
+                                        LinkedIn.
+                                        Czy wiesz, że z samego portalu Facebook korzysta obecnie 47% Polaków? Reklama na
+                                        tej platformie jest efektywna, ponieważ pozwala na precyzyjne dotarcie do określonej
+                                        grupy odbiorców i zaprezentowanie jej Twojej oferty.</p>
+                                </li>
+                                <li id="strategia-marketingowa" class="descriptions__item">
+                                    <h2 class="description__title">Strategia Marketingowa</h2>
+                                    <p class="services__about">4 Strategia Marketingowa Budujemy strategie komunikacyjne, obsługujemy profile oraz prowadzimy kampanie
+                                        reklamowe w mediach społecznościowych takich jak Facebook, Instagram czy
+                                        LinkedIn.
+                                        Czy wiesz, że z samego portalu Facebook korzysta obecnie 47% Polaków? Reklama na
+                                        tej platformie jest efektywna, ponieważ pozwala na precyzyjne dotarcie do określonej
+                                        grupy odbiorców i zaprezentowanie jej Twojej oferty.</p>
+                                </li>
+                                <li id="kreacja-graficzna" class="descriptions__item">
+                                    <h2 class="description__title">Kreacja Graficzna</h2>
+                                    <p class="services__about">5 Kreacja Graficzna Budujemy strategie komunikacyjne, obsługujemy profile oraz prowadzimy kampanie
+                                        reklamowe w mediach społecznościowych takich jak Facebook, Instagram czy
+                                        LinkedIn.
+                                        Czy wiesz, że z samego portalu Facebook korzysta obecnie 47% Polaków? Reklama na
+                                        tej platformie jest efektywna, ponieważ pozwala na precyzyjne dotarcie do określonej
+                                        grupy odbiorców i zaprezentowanie jej Twojej oferty.</p>
+                                </li>
+                                <li id="szkolenia" class="descriptions__item">
+                                    <h2 class="description__title">Szkolenia</h2>
+                                    <p class="services__about">6 Szkolenia Budujemy strategie komunikacyjne, obsługujemy profile oraz prowadzimy kampanie
+                                        reklamowe w mediach społecznościowych takich jak Facebook, Instagram czy
+                                        LinkedIn.
+                                        Czy wiesz, że z samego portalu Facebook korzysta obecnie 47% Polaków? Reklama na
+                                        tej platformie jest efektywna, ponieważ pozwala na precyzyjne dotarcie do określonej
+                                        grupy odbiorców i zaprezentowanie jej Twojej oferty.</p>
+                                </li>
+                            </ul>
+                            <button class="btn arrow btn-arrow--right">
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="content-section about">
+            <div class="bg-accent"></div>
+            <div class="section-container">
+                <div class="about-container">
+                    <div class="content-section__header content-section__header--light">
+                        <h1 class="content-section__head">O nas</h1>
+                    </div>
+                    <div class="content-section__body">
+                        <article class="about__article">
+                            <p class="about__paragraph">
+                                Specjalizujemy się w prowadzeniu profili w mediach
+                                społecznościowych. Facebook, Instagram i LinkedIn nie
+                                mają przed nami żadnych tajemnic.
+                            </p>
+                            <p class="about__paragraph">
+                                Promocja w internecie to nasz konik, tworzymy intrygujące
+                                kreacje graficzne, pozycjonujemy strony, przygotowujemy
+                                i wdrażamy strategie marketingowe.
+                            </p>
+                            <p class="about__paragraph">
+                                Swoją wiedzą dzielimy się na prowadzonych przez nas
+                                szkoleniach. Łączymy kreatywność i pasję do marketingu
+                                z wiedzą, znajomością trendów i długoletnim
+                                doświadczeniem.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="team" class="content-section team">
+            <div class="section-container">
+                <div class="content-section__header">
+                    <h1 class="content-section__head">Zespół</h1>
+                </div>
+                <div class="content-section__body content-section__body--team">
+                    <div class="team__photos">
+                        <img id="zuzanna-photo" class="team__photo team__photo--active" src="./assets/team/Zuza-01.png" alt="Zuzanna Wawrzyniak zdjęcie">
+                        <img id="melania-photo" class="team__photo" src="./assets/team/Zuza-01.png" alt="Melania Wawrzyniak zdjęcie">
+                        <img id="daniel-photo" class="team__photo" src="./assets/team/Zuza-01.png" alt="Daniel Stankiewicz zdjęcie">
+                    </div>
+                    <div class="team__right">
+                        <div class="team__miniatures">
+                            <img class="team__minuature" src="./assets/team/min-Zuza-01.png" alt="Zuzanna Wawrzyniak miniatura" onmouseover="teamChangeActives(event,'zuzanna-photo','zuzanna-desc')">
+                            <img class="team__minuature" src="./assets/team/min-Zuza-01.png" alt="Melania Wawrzyniak miniatura" onmouseover="teamChangeActives(event,'melania-photo','melania-desc')">
+                            <img class="team__minuature" src="./assets/team/min-Zuza-01.png" alt="Daniel Stankiewicz miniatura" onmouseover="teamChangeActives(event,'daniel-photo','daniel-desc')">
+                        </div>
+                        <div class="team__descriptions">
+                            <article id="zuzanna-desc" class="team__description team__description--active">
+                                <h2 class="team__title">Zuzanna Wawrzyniak</h2>
+                                <p class="team_about">1 Zuzanna Wawrzyniak Związana z prowadzeniem komunikacji marek i firm od ponad 10
+                                    lat. Marketing to jej pasja, szczególnie ten analityczny. Na swoim
+                                    koncie ma publikację naukową poświęconą zagadnieniom
+                                    budowania wizerunku w dobie społeczeństwa medialnego.
+                                    Ukończyła studia podyplomowe z zakresu Product Management.
+                                    W wolnym czasie lubi przebywać z rodziną. Praktykuje jogę
+                                    i medytację. Jest fanką zdrowego odżywiania i podróży.</p>
+                            </article>
+                            <article id="melania-desc" class="team__description">
+                                <h2 class="team__title">Melania Wawrzyniak</h2>
+                                <p class="team_about">2 Melania Wawrzyniak Związana z prowadzeniem komunikacji marek i firm od ponad 10
+                                    lat. Marketing to jej pasja, szczególnie ten analityczny. Na swoim
+                                    koncie ma publikację naukową poświęconą zagadnieniom
+                                    budowania wizerunku w dobie społeczeństwa medialnego.
+                                    Ukończyła studia podyplomowe z zakresu Product Management.
+                                    W wolnym czasie lubi przebywać z rodziną. Praktykuje jogę
+                                    i medytację. Jest fanką zdrowego odżywiania i podróży.</p>
+                            </article>
+                            <article id="daniel-desc" class="team__description">
+                                <h2 class="team__title">Daniel Stankiewicz</h2>
+                                <p class="team_about">3 Daniel Stankiewicz Związana z prowadzeniem komunikacji marek i firm od ponad 10
+                                    lat. Marketing to jej pasja, szczególnie ten analityczny. Na swoim
+                                    koncie ma publikację naukową poświęconą zagadnieniom
+                                    budowania wizerunku w dobie społeczeństwa medialnego.
+                                    Ukończyła studia podyplomowe z zakresu Product Management.
+                                    W wolnym czasie lubi przebywać z rodziną. Praktykuje jogę
+                                    i medytację. Jest fanką zdrowego odżywiania i podróży.</p>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <div class="section-container section-container--contact">
+                <div class="content-section__header">
+                    <h1 class="content-section__head">Pozostańmy w kontakcie</h1>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-column">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <h3 class="contact-title">Telefon</h3>
+                        <p class="contact-desc">727-936-000</p>
+                    </div>
+                    <div class="contact-column">
+                        <i class="fa fa-envelope contact-icon"></i>
+                        <h3 class="contact-title">Email</h3>
+                        <p class="contact-desc">kontakt@spinacz.pl</p>
+                    </div>
+                    <div class="contact-column">
+                        <i class="fas fa-clock contact-icon"></i>
+                        <h3 class="contact-title">Nasza dostępność</h3>
+                        <p class="contact-desc">pon. – pt. 8:00 – 16:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <a href="mailto:kontakt@spinacz.pl" class="footer-mail">kontakt@spinacz.pl</a>
+        <img src="./assets/logo/logo-header-white.svg" alt="Agencja Spinacz Logo" class="logo-footer">
+        <ul class="social-links">
+            <li class="social-links__item">
+                <a href="https://www.facebook.com" class="social-links__link" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li class="social-links__item">
+                <a href="https://www.instagram.com" class="social-links__link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li class="social-links__item">
+                <a href="https://www.linkedin.com" class="social-links__link" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
