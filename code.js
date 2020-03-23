@@ -1,23 +1,42 @@
 
-// NAVBAR SWITCH
+//MOBILE HAMBURGER MENU
+
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navigationPanel = document.querySelector('.page-navigation');
+const navigationLinks = document.querySelectorAll('.page-navigation__item');
+
+const toggleHamburgerMenu = () => {
+    hamburgerMenu.classList.toggle('hamburger-menu--active');
+    navigationPanel.classList.toggle('page-navigation--active');
+};
+
+hamburgerMenu.addEventListener('click', toggleHamburgerMenu);
+navigationLinks.forEach(
+    navigationSingleLink => {
+        navigationSingleLink.addEventListener('click',toggleHamburgerMenu);
+    }
+);
+
+
+// DESKTOP NAVBAR SWITCH
 
 window.onscroll = () => {
 
     const nav = document.querySelector('#nav');
-    const logoWhite = document.querySelector('.nav-logo--white');
-    const logoDark = document.querySelector('.nav-logo--black');
+    const logoWhite = document.querySelector('.brand-logo--white');
+    const logoDark = document.querySelector('.brand-logo--black');
     const navLinks = document.querySelectorAll('.page-navigation__link');
 
-    if(this.scrollY <= 10) {
-        nav.classList.remove('page-navigation--fixed');
+    if(this.scrollY <= 10 && window.matchMedia('(min-width: 992px)').matches) {
+        nav.classList.remove('page-header--fixed');
         logoWhite.style.display = 'block';
         logoDark.style.display = 'none';
         navLinks.forEach (navLink => {
             navLink.classList.remove('page-navigation__link--fixed');
         })
     }
-    else {
-        nav.classList.add('page-navigation--fixed');
+    else if (this.scrollY > 10 && window.matchMedia('(min-width: 992px)').matches) {
+        nav.classList.add('page-header--fixed');
         logoWhite.style.display = 'none';
         logoDark.style.display = 'block';
         navLinks.forEach (navLink => {

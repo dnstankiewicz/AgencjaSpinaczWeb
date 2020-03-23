@@ -99,6 +99,7 @@ p {
 }
 
 .content-section__head {
+    display: inline-block;
     font-size: var(--font-size-large);
     letter-spacing: 4.5px;
     text-transform: uppercase;
@@ -112,10 +113,20 @@ p {
     z-index: 10;
 }
 
+.spinacz {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
 
 /* NAVBAR */
 
-.page-navigation {
+.hamburger-menu {
+    display: none;
+}
+
+.page-header {
     position: absolute;
     top: 0;
     left: 0;
@@ -130,7 +141,7 @@ p {
     border-bottom: none;
 }
 
-.page-navigation--fixed {
+.page-header--fixed {
     position: fixed;
     height: 5rem;
     background-color: var(--color-light);
@@ -140,20 +151,20 @@ p {
     border-bottom: 1px solid #eee;
 }
 
-.page-navigation__brand {
+.page-brand {
     margin: 0 2.4rem;
 }
 
-.nav-logo {
+.brand-logo {
     height: 3.2rem;
     width: initial;
 }
 
-.nav-logo--black {
+.brand-logo--black {
     display: none;
 }
 
-.nav-logo--white {
+.brand-logo--white {
     display: block;
 }
 
@@ -804,38 +815,169 @@ p {
 }
 
 
-@media (min-width:576px) {
+/* // Small devices (landscape phones, less than 361px) */
+@media (max-width: 360.98px) { 
+
+    .section-container {
+        max-width: 340px;
+    }
+
+}
+
+/* // Small devices (landscape phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
     .section-container {
         max-width: 540px;
     }
+
 }
 
-@media (min-width:768px) {
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
     .section-container {
         max-width: 720px;
     }
-}
 
-@media (min-width:992px) {
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
     .section-container {
         max-width: 960px;
     }
+
+    /* HAMBURGER MENU */
+
+    .page-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 8rem;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .page-navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 8rem 0 0 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        transform: translateX(-100%);
+        transition: transform 0.4s;
+    }
+
+    .page-navigation--active {
+        transform: translateX(0);
+    }
+
+    .page-navigation__items {
+        flex-direction: column;
+        padding: 2rem 0;
+
+    }
+
+    .page-navigation__item {
+        padding: 1rem 0;
+    }
+
+    /* .page-navigation__items {
+        text-align: center;
+        padding: 0;
+    } */
+
+    .page-brand {
+        position: fixed;
+        top: 2.6rem;
+        left: 4rem;
+        /* after adding */
+        left: 50%;
+        margin: 0 0 0 -1.6rem;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: fixed;
+        top: 2.6rem;
+        right: 4rem;
+        height: 3rem;
+        width: 3.2rem;
+        z-index: 1;
+    }
+
+    .hamburger-menu__line,
+    .hamburger-menu__line::before,
+    .hamburger-menu__line::after {
+        position: absolute;
+        display: block;
+        top: 50%;
+        width: 100%;
+        height: 1.5px;
+        background-color: var(--color-accent);
+        transition: background-color 0.6s, transform .3s .3s;
+    }
+
+    .hamburger-menu__line::before,
+    .hamburger-menu__line::after {
+        content: "";
+        transform: none;
+    }
+
+    .hamburger-menu__line::before {
+        top: -8px;
+    }
+
+    .hamburger-menu__line::after {
+        top: 8px;
+    }
+
+    .hamburger-menu--active .hamburger-menu__line {
+        background-color: transparent;
+    }
+
+    .hamburger-menu--active .hamburger-menu__line::before {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-menu--active .hamburger-menu__line::after {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
 }
 
-@media (min-width:1200px) {
+    /* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
     .section-container {
         max-width: 1140px;
     }
+    
 }
 
+/* // Large devices (desktops, less than 1600px) */
+@media (max-width: 1599.98px) { 
 
-.spinacz {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-}
+    .section-container {
+        max-width: 1460px;
+    }
 
-.content-section__head{
-    display: inline-block;
-}
+ }
+
+/* // Large devices (desktops, less than 1900px) */
+@media (max-width: 1899.98px) { 
+
+    .section-container {
+        max-width: 1640px;
+    }
+
+ }
+
+
+
+
+
 
