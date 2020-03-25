@@ -96,7 +96,6 @@ p {
 }
 
 .content-section__body {
-    /* flex: 1; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -677,7 +676,6 @@ p {
 }
 
 .team__description {
-    width: 80%;
     position: absolute;
     padding: 0 4rem;
     right: 0;
@@ -835,22 +833,17 @@ p {
 /* MEDIA QUERIES */
 
 @media (min-width: 1900px) {
-
-}
-
-/* // Large devices (desktops, less than 1900px) */
-@media (min-width: 1600px) and (max-width: 1899.98px) { 
-
+    
     .section-container {
-        max-width: 1640px;
+        max-width: 2100px;
     }
 
     .content-section__header {
-        margin-bottom: 10rem;
+        margin-bottom: 12rem;
     }
 
     .content-section__head {
-        font-size: 4.6rem;
+        font-size: 5rem;
     }
 
     .page-header {
@@ -871,7 +864,7 @@ p {
     }
 
     .home-content__header {
-        font-size: 8rem;
+        font-size: 9rem;
     }
 
     .content-section__body--services {
@@ -889,24 +882,151 @@ p {
     }
 
     .services__title {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
 
     .description__title {
-        font-size: 3.6rem;
+        font-size: 4rem;
     }
 
     .services__about {
-        font-size: 2.8rem;
+        font-size: 3rem;
     }
 
     .spinacz {
-        width: 7rem;
-        height: 7rem;
+        width: 7.4rem;
+        height: 7.4rem;
     }
 
     .about__paragraph {
-        font-size: 3rem;
+        font-size: 3.6rem;
+    }
+
+    .about__paragraph:first-child {
+        padding-top: 3rem;
+    }
+
+    .content-section__header--team {
+        margin-top: 14rem;
+    }
+
+    .team__photo {
+        height: 86rem;
+    }
+
+    .team__minuature {
+        height: 12rem;
+    }
+
+    .team__title {
+        font-size: 4.6rem;
+    }
+
+    .team_about {
+        font-size: 2.8rem;
+    }
+
+    .section-container--contact {
+        min-height: 80vh;
+    }
+
+    .contact-icon {
+        font-size: 5.4rem;
+        margin-bottom: 2.8rem;
+    }
+
+    .contact-title {
+        font-size: 4.2rem;
+    }
+
+    .contact-desc {
+        font-size: 2.8rem;
+    }
+    
+    .footer-mail {
+        font-size: 3.8rem;
+    }
+
+    .logo-footer {
+        width: 9.6rem;
+    }
+
+    .social-links__link {
+        font-size: 4.8rem;
+    }
+
+
+}
+
+/* // Large devices (desktops, less than 1900px) */
+@media (min-width: 1500px) and (max-width: 1899.98px) { 
+
+    .section-container {
+        max-width: 1580px;
+    }
+
+    .content-section__header {
+        margin-bottom: 8rem;
+    }
+
+    .content-section__head {
+        font-size: 4.2rem;
+    }
+
+    .page-header {
+        height: 9rem;
+    }
+
+    .page-header--fixed {
+        height: 7rem;
+    }
+
+    .page-navigation__items {
+        margin: 0 10rem;
+    }
+
+    .page-navigation__item {
+        padding: 0 5rem;
+        font-size: 2rem;
+    }
+
+    .home-content__header {
+        font-size: 7.6rem;
+    }
+
+    .content-section__body--services {
+        row-gap: 4rem;
+    }
+
+    .serivces__icon {
+        width: 6rem;
+        height: 6rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .icon__element {
+        font-size: 2.4rem;
+    }
+
+    .services__title {
+        font-size: 1.8rem;
+    }
+
+    .description__title {
+        font-size: 3.2rem;
+    }
+
+    .services__about {
+        font-size: 2.6rem;
+    }
+
+    .spinacz {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .about__paragraph {
+        font-size: 2.8rem;
     }
 
     .about__paragraph:first-child {
@@ -918,15 +1038,11 @@ p {
     }
 
     .team__photo {
-        height: 76rem;
+        height: 70rem;
     }
 
     .team__minuature {
         height: 10rem;
-    }
-
-    .team__description {
-        width: 100%;
     }
 
     .team__title {
@@ -934,11 +1050,11 @@ p {
     }
 
     .team_about {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
     }
 
     .section-container--contact {
-        min-height: 80vh;
+        min-height: 75vh;
     }
 
     .contact-icon {
@@ -947,11 +1063,11 @@ p {
     }
 
     .contact-title {
-        font-size: 4rem;
+        font-size: 3.8rem;
     }
 
     .contact-desc {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
     }
     
     .footer-mail {
@@ -966,16 +1082,15 @@ p {
         font-size: 4rem;
     }
 
-
-
  }
 
 
  /* // Large devices (desktops, less than 1600px) */
-@media (min-width: 1200px) and (max-width: 1599.98px) { 
+@media (min-width: 1200px) and (max-width: 1499.98px) { 
 
     .section-container {
-        max-width: 1460px;
+        /* max-width: 1460px; */
+        max-width: 1260px;
     }
 
  }
@@ -991,12 +1106,8 @@ p {
 }
 
 
-/* // Medium devices (tablets, less than 992px) */
-@media (min-width: 768px) and (max-width: 991.98px) { 
-
-    .section-container {
-        max-width: 960px;
-    }
+/* // Media Query for hamburger menu */
+@media (max-width: 991.98px) { 
 
     /* HAMBURGER MENU */
 
@@ -1049,6 +1160,7 @@ p {
         height: 3rem;
         width: 3.2rem;
         z-index: 1;
+        cursor: pointer;
     }
 
     .hamburger-menu__line,
@@ -1087,6 +1199,15 @@ p {
 
     .hamburger-menu--active .hamburger-menu__line::after {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+    .section-container {
+        max-width: 960px;
     }
 
 }
