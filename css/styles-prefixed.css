@@ -221,6 +221,8 @@ p {
     position: relative;
 }
 
+
+
 .background-cover {
     position: absolute;
     width: 100%;
@@ -941,7 +943,7 @@ p {
     width: 90%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr 1fr 1fr);
     grid-template-columns: repeat(3,1fr);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -988,7 +990,7 @@ p {
     background-color: #1c1d21;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr 1fr 1fr);
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
     -webkit-box-align: center;
@@ -1378,6 +1380,10 @@ p {
         -webkit-transform: translateY(-8px) rotate(-45deg);
             -ms-transform: translateY(-8px) rotate(-45deg);
                 transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .home {
+        background-attachment: initial;
     }
 
     .about-container {
