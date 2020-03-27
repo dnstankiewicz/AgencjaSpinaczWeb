@@ -217,9 +217,14 @@ p {
     background: url(../assets/background/bg-5.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     position: relative;
 }
+
+@supports (background-attachment: fixed) {
+    .home {
+        background-attachment: fixed;
+    }
+  }
 
 
 
@@ -1380,10 +1385,6 @@ p {
         -webkit-transform: translateY(-8px) rotate(-45deg);
             -ms-transform: translateY(-8px) rotate(-45deg);
                 transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .home {
-        background-attachment: initial;
     }
 
     .about-container {
