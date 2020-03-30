@@ -5,22 +5,20 @@ const hamburgerMenu = document.querySelector('.hamburger-menu');
 const navigationPanel = document.querySelector('.page-navigation');
 const navigationLinks = document.querySelectorAll('.page-navigation__item');
 
-const toggleHamburgerMenu = () => {
+const toggleHamburgerMenu = function () {
     hamburgerMenu.classList.toggle('hamburger-menu--active');
     navigationPanel.classList.toggle('page-navigation--active');
 };
 
 hamburgerMenu.addEventListener('click', toggleHamburgerMenu);
-navigationLinks.forEach(
-    navigationSingleLink => {
-        navigationSingleLink.addEventListener('click',toggleHamburgerMenu);
-    }
-);
+for (let i = 0; i < navigationLinks.length; i++) {
+    navigationLinks[i].addEventListener('click',toggleHamburgerMenu);
+}
 
 
 // DESKTOP NAVBAR SWITCH
 
-window.onscroll = () => {
+window.onscroll = function () {
 
     const nav = document.querySelector('#nav');
     const logoWhite = document.querySelector('.brand-logo--white');
@@ -31,17 +29,17 @@ window.onscroll = () => {
         nav.classList.remove('page-header--fixed');
         logoWhite.style.display = 'block';
         logoDark.style.display = 'none';
-        navLinks.forEach (navLink => {
-            navLink.classList.remove('page-navigation__link--fixed');
-        })
+        for (let i = 0; i < navLinks.length; i++) {
+            navLinks[i].classList.remove('page-navigation__link--fixed');
+        }
     }
     else if (this.scrollY > 10 && window.matchMedia('(min-width: 992px)').matches) {
         nav.classList.add('page-header--fixed');
         logoWhite.style.display = 'none';
         logoDark.style.display = 'block';
-        navLinks.forEach (navLink => {
-            navLink.classList.add('page-navigation__link--fixed');
-        })
+        for (let i = 0; i < navLinks.length; i++) {
+            navLinks[i].classList.add('page-navigation__link--fixed');
+        }
     }
 };
 
@@ -49,9 +47,9 @@ window.onscroll = () => {
 // CAROUSELL HELPER FUNCTION
 
 function reset(list,activeClassName) {
-    list.forEach(listItem => {
-        listItem.classList.remove(activeClassName);
-    })
+    for (let i = 0; i < list.length; i++) {
+        list[i].classList.remove(activeClassName);
+    }
 }
 
 
@@ -104,15 +102,14 @@ function slideRight() {
     currentSlide++;
 }
 
-//Add event listener on each arrow
-arrowLeft.addEventListener('click',() => {
+arrowLeft.addEventListener('click',function() {
     if(currentSlide === 0) {
         currentSlide = servicesDescriptions.length
     }
     slideLeft();
 })
 
-arrowRight.addEventListener('click',() => {
+arrowRight.addEventListener('click',function() {
     if(currentSlide === servicesDescriptions.length - 1) {
         currentSlide = -1;
     }

@@ -2,30 +2,25 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
-    <!-- TODO SEO PAGE TITLE -->
-    <title>Agencja Spinacz</title>
+    <title>Spinacz Agencja Marketingowa</title>
 
-    <!-- TODO SEO PAGE DESCRIPTION -->
-
-    <!-- <meta name="description" content="..........."> -->
-    
-    <!-- TO DO SEO KEYWORDS TAG -->
-    <!-- <meta name="keywords" content="......."> -->
-
+    <meta name="description" content="Promocja w internecie to nasz konik, prowadzimy fanpage, Facebook, Instagram i LinkedIn nie mają przed nami żadnych tajemnic. Tworzymy intrygujące kreacje graficzne, pozycjonujemy strony, przygotowujemy i wdrażamy strategie marketingowe. Szkolimy.">
+    <meta name="keywords" content="Social media, media społecznościowe, szkolenia marketing online, szkolenia media społecznościowe, szkolenia fanpage, szkolenia social media, stratega marketingowa, strategia fanpage, strategia social media, marka, promocja w internecie, promocja marki w internecie, promocja firmy w internecie, audyt marketingowy, branding, kreacja graficzna, grafika, logo, projekt logo, szkolenia online, e-marketing, e-szkolenia, Facebook, Instagram, LinkedIn, Pinterest, pozycjonowanie, pozycjonowanie stron, content, fanpage, kampania reklamowa, kampania reklamowa online, optymalizacja stron internetowych, copywriting, marka w internecie, firma w internecie, marketing w internecie, audyt stron www, audyt stron internetowych, prowadzenie Facebooka, prowadzenia Instagrama, prowadzenie LinkedIna, prowadzenie Pinteresta, prowadzenie fanpage">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- favicon accent or dark one? -->
     <link rel="shortcut icon" type="image/png" href="./assets/favicon/favicon-accent.ico"/>
 
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/hover.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/styles-prefixed.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles-prefixed.css"> -->
 
-    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,700&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/791e047716.js" crossorigin="anonymous"></script>
-
     <script src="./js/code.js" defer></script>
 </head>
 <body>
@@ -40,11 +35,11 @@
         </div>
         <nav class="page-navigation">
             <ul class="page-navigation__items">
-                <li class="page-navigation__item"><a href="#home" class="page-navigation__link">Początek</a></li>
-                <li class="page-navigation__item"><a href="#services" class="page-navigation__link">Oferta</a></li>
-                <li class="page-navigation__item"><a href="#about" class="page-navigation__link">O nas</a></li>
-                <li class="page-navigation__item"><a href="#team" class="page-navigation__link">Zespół</a></li>
-                <li class="page-navigation__item"><a href="#contact" class="page-navigation__link">Kontakt</a></li>
+                <li class="page-navigation__item"><a href="#home" class="page-navigation__link hvr-underline-from-left">Początek</a></li>
+                <li class="page-navigation__item"><a href="#services" class="page-navigation__link hvr-underline-from-left">Oferta</a></li>
+                <li class="page-navigation__item"><a href="#about" class="page-navigation__link hvr-underline-from-left">O nas</a></li>
+                <li class="page-navigation__item"><a href="#team" class="page-navigation__link hvr-underline-from-left">Zespół</a></li>
+                <li class="page-navigation__item"><a href="#contact" class="page-navigation__link hvr-underline-from-left">Kontakt</a></li>
             </ul>
         </nav>
     </header>
@@ -75,7 +70,7 @@
                                 <div class="serivces__icon">
                                     <i class="fas fa-hashtag icon__element"></i>
                                 </div>
-                                <h3 class="services__title">Social Media</span></h3>
+                                <h3 class="services__title">Social Media</h3>
                             </li>
                             <li class="services__item two" onmouseover="serviceChangeActive(event,'pozycjonowanie')">
                                 <div class="serivces__icon">
@@ -185,12 +180,12 @@
                     <h1 class="content-section__head">Zespół</h1>
                 </div>
                 <div class="content-section__body content-section__body--team">
-                    <div class="team__photos">
+                    <div class="team__photos wow fadeInLeftBig">
                         <img id="melania-photo" class="team__photo team__photo--active" src="./assets/team/Mela - wycięte - 600px.png" alt="Melania Wawrzyniak zdjęcie">
                         <img id="zuzanna-photo" class="team__photo" src="./assets/team/Zuza - wycięte_600px.png" alt="Zuzanna Poziomka zdjęcie">
-                        <img id="daniel-photo" class="team__photo" src="./assets/team/Daniel - wycięte - 600px.png" alt="Daniel Stankiewicz zdjęcie">
+                        <img id="daniel-photo" class="team__photo" src="./assets/team/Daniel - wycięte - 600px - mniejszy kadr.png" alt="Daniel Stankiewicz zdjęcie">
                     </div>
-                    <div class="team__right">
+                    <div class="team__right wow fadeInRightBig">
                         <div class="team__miniatures">
                             <img class="team__minuature" src="./assets/team/Mela - wycięte - 70px.png" alt="Melania Wawrzyniak miniatura" onmouseover="teamChangeActives(event,'melania-photo','melania-desc')">
                             <img class="team__minuature" src="./assets/team/Zuza - wycięte - 70px.png" alt="Zuzanna Poziomka miniatura" onmouseover="teamChangeActives(event,'zuzanna-photo','zuzanna-desc')">
@@ -199,13 +194,10 @@
                         <div class="team__descriptions">
                             <article id="melania-desc" class="team__description team__description--active">
                                 <h2 class="team__title">Melania Wawrzyniak</h2>
-                                <p class="team_about">2 Melania Wawrzyniak Związana z prowadzeniem komunikacji marek i firm od ponad 10
-                                    lat. Marketing to jej pasja, szczególnie ten analityczny. Na swoim
-                                    koncie ma publikację naukową poświęconą zagadnieniom
-                                    budowania wizerunku w dobie społeczeństwa medialnego.
-                                    Ukończyła studia podyplomowe z zakresu Product Management.
-                                    W wolnym czasie lubi przebywać z rodziną. Praktykuje jogę
-                                    i medytację. Jest fanką zdrowego odżywiania i podróży.</p>
+                                <p class="team_about">W branży marketingowej pracuje od 3 lat. Swoje doświadczenie zdobywała w jednej z największych agencji PR w Warszawie. 
+                                    Realizując się zawodowo, miała okazję pracować w dwóch sektorach: public relations dla marek FMCG oraz digital, gdzie zajmowała się prowadzeniem komunikacji w mediach społecznościowych i influencer marketingiem dla klientów z branży gastronomicznej, technologicznej oraz dostawców telewizyjnych. 
+                                    Frajdę sprawia jej gotowanie oraz pielęgnacja roślin doniczkowych.
+                                </p>
                             </article>
                             <article id="zuzanna-desc" class="team__description">
                                 <h2 class="team__title">Zuzanna Poziomka</h2>
@@ -215,7 +207,8 @@
                                     budowania wizerunku w dobie społeczeństwa medialnego.
                                     Ukończyła studia podyplomowe z zakresu Product Management.
                                     W wolnym czasie lubi przebywać z rodziną. Praktykuje jogę
-                                    i medytację. Jest fanką zdrowego odżywiania i podróży.</p>
+                                    i medytację. Jest fanką zdrowego odżywiania i podróży.
+                                </p>
                             </article>
                             <article id="daniel-desc" class="team__description">
                                 <h2 class="team__title">Daniel Stankiewicz</h2>
@@ -238,17 +231,17 @@
                     <h1 class="content-section__head">Pozostańmy w kontakcie</h1>
                 </div>
                 <div class="contact-container">
-                    <div class="contact-column">
+                    <div class="contact-column wow fadeInRightBig">
                         <i class="fas fa-phone-alt contact-icon"></i>
                         <h3 class="contact-title">Telefon</h3>
                         <p class="contact-desc">727-936-000</p>
                     </div>
-                    <div class="contact-column">
+                    <div class="contact-column wow fadeInRightBig">
                         <i class="fa fa-envelope contact-icon"></i>
                         <h3 class="contact-title">Email</h3>
                         <p class="contact-desc">kontakt@spinacz.pl</p>
                     </div>
-                    <div class="contact-column">
+                    <div class="contact-column wow fadeInRightBig">
                         <i class="fas fa-clock contact-icon"></i>
                         <h3 class="contact-title">Nasza dostępność</h3>
                         <p class="contact-desc">pon. – pt. 8:00 – 16:00</p>
@@ -258,25 +251,29 @@
         </section>
     </main>
     <footer class="page-footer">
-        <a href="mailto:kontakt@spinacz.pl" class="footer-mail" title="Masz pytanie? Wyślij maila!">kontakt@spinacz.pl</a>
+        <a href="mailto:kontakt@spinacz.pl" class="footer-mail hvr-bounce-in" title="Masz pytanie? Wyślij maila!">kontakt@spinacz.pl</a>
         <img src="./assets/logo/logo-white.png" alt="Agencja Spinacz Logo" class="logo-footer">
         <ul class="social-links">
-            <li class="social-links__item">
+            <li class="social-links__item hvr-bounce-in">
                 <a href="https://www.facebook.com" class="social-links__link" title="Znajdź nas na Facebooku">
                     <i class="fab fa-facebook"></i>
                 </a>
             </li>
-            <li class="social-links__item">
+            <li class="social-links__item hvr-bounce-in">
                 <a href="https://www.instagram.com" class="social-links__link" title="Znajdź nas na Instagramie">
                     <i class="fab fa-instagram"></i>
                 </a>
             </li>
-            <li class="social-links__item">
+            <li class="social-links__item hvr-bounce-in">
                 <a href="https://www.linkedin.com" class="social-links__link" title="Znajdź nas na LinkedInie">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
             </li>
         </ul>
     </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
