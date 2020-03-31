@@ -10,7 +10,7 @@ html {
 body {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.5px;
 }
 
 img {
@@ -55,7 +55,7 @@ p {
 .content-section__head {
     display: inline-block;
     font-size: 3.6rem;
-    letter-spacing: 4.5px;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
@@ -185,7 +185,7 @@ p {
     text-align: center;
     padding: 4rem;
     margin-top: 15rem;
-    /* animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both; */
+    animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 }
 
 @keyframes shadow-drop-center {
@@ -230,7 +230,7 @@ p {
     /* z-index: 1; */
 }
 
-/* .home-scroll {
+.home-scroll {
     position: absolute;
     padding-top: 70px;
     bottom: 0;
@@ -272,7 +272,7 @@ p {
       transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
       opacity: 0;
     }
-  } */
+  } 
 
 
 /* SERVICES SECTION */
@@ -554,6 +554,27 @@ p {
     color: #fff;
     padding: 3rem;
     font-size: 2.3rem;
+}
+
+.cta-container {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta {
+    padding: 7px 15px;
+    border-radius: 3px;
+    background-color: rgba(204, 200, 255, 0.1);
+    background-color: rgba(204, 200, 255, 0.1);
+    border-color: rgba(204, 200, 255, 0.1);
+    color: rgba(204, 200, 255, 0.8);
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    cursor: pointer;
 }
 
 
@@ -1242,11 +1263,19 @@ p {
 
     .team__minuature {
         margin: 2rem;
+        border: 3px solid transparent;
+        padding: 4px;
     }
 
-    .team__minuature:last-child {
+    .team__minuature:last-child {   
         margin: 2rem;
     }
+
+    /* .team__minuature:hover,
+    .team__minuature:focus,
+    .team__minuature:active {
+        border: 3px solid #4AB7A3;
+    } */
 
     .contact-container {
         width: 100%;
@@ -1461,6 +1490,11 @@ p {
 /* Targeting IE 10&11 */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
+
     .page-header {
         position: fixed;
         top: 0;
@@ -1517,13 +1551,13 @@ p {
         width: 70%;
     }
 
-    .team {
+    /* .team {
         background-color: #fff;
-    }
+    } */
 
-    .team::after {
+    /* .team::after {
         display: none;
-    }
+    } */
 
 
     .contact {
@@ -1563,6 +1597,4 @@ p {
         display: flex;
         justify-content: space-around;
     }
-
-
 }

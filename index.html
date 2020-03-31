@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/791e047716.js" crossorigin="anonymous"></script>
     <script src="./js/code.js" defer></script>
@@ -55,6 +56,30 @@
                 <!-- <a class="home-scroll" href="#services"><span></span>O nas</a> -->
             </div>
         </section>
+
+        <section id="about" class="content-section about">
+            <div class="bg-accent"></div>
+            <div class="section-container about-container">
+                <div class="content-section__header content-section__header--light">
+                    <img class="spinacz" src="./assets/svg/spinacz-white.svg" alt="spinacz">
+                    <h1 class="content-section__head content-section__header--padding-top">O nas</h1>
+                </div>
+                <div class="content-section__body content-section__body--about">
+                    <article class="about__article">
+                        <p class="about__paragraph">
+                            Specjalizujemy się w prowadzeniu profili w mediach społecznościowych. 
+                            Facebook, Instagram i LinkedIn nie mają przed nami żadnych tajemnic. 
+                            Promocja w internecie to nasz konik, tworzymy intrygujące kreacje graficzne, pozycjonujemy strony, przygotowujemy i wdrażamy strategie marketingowe.
+                        </p>
+                        <p class="about__paragraph">
+                            Swoją wiedzą dzielimy się na prowadzonych przez nas szkoleniach. 
+                            Łączymy kreatywność i pasję do marketingu z wiedzą, znajomością trendów i długoletnim doświadczeniem.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section id="services" class="content-section services">
             <div class="bg-white"></div>
             <div class="section-container-shadow">
@@ -113,7 +138,7 @@
                                     <p class="services__about">
                                         Zajmujemy się pozycjonowaniem stron internetowych poprzez ich optymalizację oraz tworzenie grafik, pisanie tekstów. Audytujemy, doradzamy i wprowadzamy zmiany. Przygotowujemy angażujące treści, atrakcyjne zarówno dla wyszukiwarek jak i Twoich klientów.
                                         <span></span>
-                                        W swoich działaniach kierujemy się zasadą: <em>skuteczny marketing nie jest mierzony wielkością budżetu, a efektem i osiągniętą sprzedażą</em>.
+                                        W swoich działaniach kierujemy się zasadą: skuteczny marketing nie jest mierzony wielkością budżetu, a efektem i osiągniętą sprzedażą.
                                     </p>
                                 </li>
                                 <li id="grafika" class="descriptions__item">
@@ -150,7 +175,15 @@
             </div>
             <div class="bg-white bg-white--bottom"></div>
         </section>
-        <section id="about" class="content-section about">
+        <div class="cta-container">
+            <button class="cta">
+                <a href="mailto:kontakt@spinaczagencja.pl" class="cta__mail-ref">
+                    Zadaj nam pytanie!
+                </a>
+            </button>
+        </div>
+        
+        <!-- <section id="about" class="content-section about">
             <div class="bg-accent"></div>
             <div class="section-container about-container">
                 <div class="content-section__header content-section__header--light">
@@ -171,7 +204,7 @@
                     </article>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section id="team" class="content-section team">
             <div class="section-container section-container--team">
                 <div class="content-section__header content-section__header--team">
@@ -180,26 +213,26 @@
                 </div>
                 <div class="content-section__body content-section__body--team">
                     <div class="team__photos wow fadeInLeftBig">
-                        <img id="melania-photo" class="team__photo team__photo--active" src="./assets/team/Mela - wycięte - 600px.png" alt="Melania Wawrzyniak zdjęcie">
-                        <img id="zuzanna-photo" class="team__photo" src="./assets/team/Zuza - wycięte_600px.png" alt="Zuzanna Poziomka zdjęcie">
-                        <img id="daniel-photo" class="team__photo" src="./assets/team/Daniel - wycięte - 600px - mniejszy kadr.png" alt="Daniel Stankiewicz zdjęcie">
+                        <img id="melania-photo" class="team__photo team__photo--active" src="./assets/team/Mela - wycięte - 600px.png" alt="Melania zdjęcie">
+                        <img id="zuzanna-photo" class="team__photo" src="./assets/team/Zuza - wycięte_600px.png" alt="Zuzanna zdjęcie">
+                        <img id="daniel-photo" class="team__photo" src="./assets/team/Daniel - wycięte - 600px - mniejszy kadr.png" alt="Daniel zdjęcie">
                     </div>
                     <div class="team__right wow fadeInRightBig">
                         <div class="team__miniatures">
-                            <img class="team__minuature" src="./assets/team/Mela - wycięte - 70px.png" alt="Melania Wawrzyniak miniatura" onmouseover="teamChangeActives(event,'melania-photo','melania-desc')">
-                            <img class="team__minuature" src="./assets/team/Zuza - wycięte - 70px.png" alt="Zuzanna Poziomka miniatura" onmouseover="teamChangeActives(event,'zuzanna-photo','zuzanna-desc')">
-                            <img class="team__minuature" src="./assets/team/Daniel - wycięte - 60px.png" alt="Daniel Stankiewicz miniatura" onmouseover="teamChangeActives(event,'daniel-photo','daniel-desc')">
+                            <img class="team__minuature" src="./assets/team/Mela - wycięte - 70px.png" alt="Melania miniatura" onmouseover="teamChangeActives(event,'melania-photo','melania-desc')">
+                            <img class="team__minuature" src="./assets/team/Zuza - wycięte - 70px.png" alt="Zuzanna miniatura" onmouseover="teamChangeActives(event,'zuzanna-photo','zuzanna-desc')">
+                            <img class="team__minuature" src="./assets/team/Daniel - wycięte - 60px.png" alt="Daniel miniatura" onmouseover="teamChangeActives(event,'daniel-photo','daniel-desc')">
                         </div>
                         <div class="team__descriptions">
                             <article id="melania-desc" class="team__description team__description--active">
-                                <h2 class="team__title">Melania Wawrzyniak</h2>
+                                <h2 class="team__title">Melania</h2>
                                 <p class="team_about">W branży marketingowej pracuje od 3 lat. Swoje doświadczenie zdobywała w jednej z największych agencji PR w Warszawie. 
                                     Realizując się zawodowo, miała okazję pracować w dwóch sektorach: public relations dla marek FMCG oraz digital, gdzie zajmowała się prowadzeniem komunikacji w mediach społecznościowych i influencer marketingiem dla klientów z branży gastronomicznej, technologicznej oraz dostawców telewizyjnych. 
                                     Frajdę sprawia jej gotowanie oraz pielęgnacja roślin doniczkowych.
                                 </p>
                             </article>
                             <article id="zuzanna-desc" class="team__description">
-                                <h2 class="team__title">Zuzanna Poziomka</h2>
+                                <h2 class="team__title">Zuzanna</h2>
                                 <p class="team_about">Związana z prowadzeniem komunikacji marek i firm od ponad 10
                                     lat. Marketing to jej pasja, szczególnie ten analityczny. Na swoim
                                     koncie ma publikację naukową poświęconą zagadnieniom
@@ -210,7 +243,7 @@
                                 </p>
                             </article>
                             <article id="daniel-desc" class="team__description">
-                                <h2 class="team__title">Daniel Stankiewicz</h2>
+                                <h2 class="team__title">Daniel</h2>
                                 <p class="team_about">Zajmuje się projektowaniem oraz tworzeniem witryn internetowych. 
                                     Jak nikt inny potrafi znaleźć odpowiedź na każde oczekiwanie klienta. 
                                     Raz, dwa rozpracowuje cele biznesowe i dostosowuje pod nie swoje projekty. 
@@ -238,7 +271,7 @@
                     <div class="contact-column wow fadeInRightBig">
                         <i class="fa fa-envelope contact-icon"></i>
                         <h3 class="contact-title">Email</h3>
-                        <p class="contact-desc">kontakt@spinacz.pl</p>
+                        <p class="contact-desc">kontakt@spinaczagencja.pl</p>
                     </div>
                     <div class="contact-column wow fadeInRightBig">
                         <i class="fas fa-clock contact-icon"></i>
@@ -250,7 +283,7 @@
         </section>
     </main>
     <footer class="page-footer">
-        <a href="mailto:kontakt@spinacz.pl" class="footer-mail hvr-bounce-in" title="Masz pytanie? Wyślij maila!">kontakt@spinacz.pl</a>
+        <a href="mailto:kontakt@spinaczagencja.pl" class="footer-mail hvr-bounce-in" title="Masz pytanie? Wyślij maila!">kontakt@spinaczagencja.pl</a>
         <img src="./assets/logo/logo-white.png" alt="Agencja Spinacz Logo" class="logo-footer">
         <ul class="social-links">
             <li class="social-links__item hvr-bounce-in">
