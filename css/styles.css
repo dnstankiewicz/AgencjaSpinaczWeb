@@ -642,6 +642,7 @@ p {
 }
 
 .team__photos {
+    max-height: 70vh;
     height: 100%;
     width: 100%;
     display: flex;
