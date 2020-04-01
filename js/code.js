@@ -52,11 +52,18 @@ function reset(list,activeClassName) {
     }
 }
 
+function resetChildrenClass(parent,activeClassName) {
+    for (let i = 0; i < parent.children.length; i++) {
+        parent.children[i].classList.remove(activeClassName);        
+    }
+}
+
 
 //TEAM CAROUSELL
 
 const teamDescriptions = document.querySelectorAll('.team__description');
 const teamPhotos = document.querySelectorAll('.team__photo');
+const teamMiniatures = document.querySelector('.team__miniatures');
 
 function teamChangeActives(e,photoElementID,descElementID) {
     // remove class 'team__photo--active' and 'team__description--active' from all img elements
@@ -67,6 +74,11 @@ function teamChangeActives(e,photoElementID,descElementID) {
     document.getElementById(photoElementID).classList.add('team__photo--active');
     document.getElementById(descElementID).classList.add('team__description--active');
 }
+
+teamMiniatures.addEventListener('click',function(e) {
+    resetChildrenClass(teamMiniatures,'team__miniature--active');
+    e.target.classList.add('team__miniature--active');
+})
 
 
 // SERVICES CAROUSELL
