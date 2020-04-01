@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,700&display=swap&subset=latin,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin,latin-ext" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/791e047716.js" crossorigin="anonymous"></script>
     <script src="./js/code.js" defer></script>
@@ -56,7 +56,7 @@
                 <!-- <a class="home-scroll" href="#services"><span></span>O nas</a> -->
             </div>
         </section>
-
+        <div class="bg-white bg-white--top"></div>
         <section id="about" class="content-section about">
             <div class="bg-accent"></div>
             <div class="section-container about-container">
@@ -66,12 +66,12 @@
                 </div>
                 <div class="content-section__body content-section__body--about">
                     <article class="about__article">
-                        <p class="about__paragraph">
+                        <p class="about__paragraph wow fadeInLeft" data-wow-duration="0.5s">
                             Specjalizujemy się w prowadzeniu profili w mediach społecznościowych. 
                             Facebook, Instagram i LinkedIn nie mają przed nami żadnych tajemnic. 
                             Promocja w internecie to nasz konik, tworzymy intrygujące kreacje graficzne, pozycjonujemy strony, przygotowujemy i wdrażamy strategie marketingowe.
                         </p>
-                        <p class="about__paragraph">
+                        <p class="about__paragraph wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.15s">
                             Swoją wiedzą dzielimy się na prowadzonych przez nas szkoleniach. 
                             Łączymy kreatywność i pasję do marketingu z wiedzą, znajomością trendów i długoletnim doświadczeniem.
                         </p>
@@ -88,7 +88,7 @@
                         <img class="spinacz" src="./assets/svg/spinacz-white.svg" alt="spinacz">
                         <h1 class="content-section__head">Oferta</h1>
                     </div>
-                    <div class="content-section__body content-section__body--services">
+                    <div class="content-section__body content-section__body--services wow fadeIn" data-wow-delay="0.1s">
                         <ul class="services__items">
                             <li class="services__item one" onmouseover="serviceChangeActive(event,'social-media')">
                                 <div class="serivces__icon">
@@ -171,24 +171,21 @@
                             </button>
                         </div>
                     </div>
+                    <div class="cta-container wow fadeIn" data-wow-delay="0.08s">
+                        <div class="cta-heartbeat">
+                            <button class="cta">
+                                <a target="_blank" rel="noopener noreferrer" href="https://m.me/spinaczagencja" class="cta__mail-ref hvr-icon-drop">
+                                    Zadaj nam pytanie!
+                                    <i class="fas fa-paperclip"></i>
+                                </a>
+                            </button>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
             <div class="bg-white bg-white--bottom"></div>
         </section>
-        <div class="cta-container">
-            <button class="cta">
-                <a href="mailto:kontakt@spinaczagencja.pl" class="cta__mail-ref hvr-icon-drop">
-                    Zadaj nam pytanie!
-                    <i class="fas fa-paperclip hvr-icon-drop"></i>
-                </a>
-            </button>
-            <button class="cta">
-                <a href="mailto:kontakt@spinaczagencja.pl" class="cta__mail-ref hvr-icon-pop">
-                    Zadaj nam pytanie!
-                    <i class="fas fa-paperclip hvr-icon-pop"></i>
-                </a>
-            </button>
-        </div>
         <section id="team" class="content-section team">
             <div class="section-container section-container--team">
                 <div class="content-section__header content-section__header--team">
@@ -196,12 +193,12 @@
                     <h1 class="content-section__head">Zespół</h1>
                 </div>
                 <div class="content-section__body content-section__body--team">
-                    <div class="team__photos wow fadeInLeftBig">
+                    <div class="team__photos wow bounceInLeft" data-wow-delay="0.2s">
                         <img id="melania-photo" class="team__photo team__photo--active" src="./assets/team/Melania-big.png" alt="Melania zdjęcie">
                         <img id="zuzanna-photo" class="team__photo" src="./assets/team/Zuzanna-big.png" alt="Zuzanna zdjęcie">
                         <img id="daniel-photo" class="team__photo" src="./assets/team/Daniel-big.png" alt="Daniel zdjęcie">
                     </div>
-                    <div class="team__right wow fadeInRightBig">
+                    <div class="team__right wow bounceInRight" >
                         <div class="team__miniatures">
                             <img class="team__miniature team__miniature--active" src="./assets/team/Melania-small.png" alt="Melania miniatura" onmouseover="teamChangeActives(event,'melania-photo','melania-desc')">
                             <img class="team__miniature" src="./assets/team/Zuzanna-small.png" alt="Zuzanna miniatura" onmouseover="teamChangeActives(event,'zuzanna-photo','zuzanna-desc')">
@@ -248,17 +245,21 @@
                     <h1 class="content-section__head">Pozostańmy w kontakcie</h1>
                 </div>
                 <div class="contact-container">
-                    <div class="contact-column wow fadeInRightBig">
+                    <div class="contact-column wow flipInY">
                         <i class="fas fa-phone-alt contact-icon"></i>
                         <h3 class="contact-title">Telefon</h3>
-                        <p class="contact-desc">727-936-000</p>
+                        <p class="contact-desc">785-210-310</p>
                     </div>
-                    <div class="contact-column wow fadeInRightBig">
+                    <div class="contact-column wow flipInY" data-wow-delay="0.2s">
                         <i class="fa fa-envelope contact-icon"></i>
                         <h3 class="contact-title">Email</h3>
-                        <p class="contact-desc">kontakt@spinaczagencja.pl</p>
+                        <p class="contact-desc">
+                            <a href="mailto:kontakt@spinaczagencja.pl">
+                                kontakt@spinaczagencja.pl
+                            </a>
+                        </p>
                     </div>
-                    <div class="contact-column wow fadeInRightBig">
+                    <div class="contact-column wow flipInY" data-wow-delay="0.4s">
                         <i class="fas fa-clock contact-icon"></i>
                         <h3 class="contact-title">Nasza dostępność</h3>
                         <p class="contact-desc">pon. – pt. 8:00 – 16:00</p>

@@ -10,6 +10,7 @@ html {
 body {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
+    font-style: normal;
     letter-spacing: 0.5px;
 }
 
@@ -346,6 +347,10 @@ p {
     background-color: #fff;
 }
 
+.bg-white--top {
+    display: none;
+}
+
 .bg-white--bottom {
     height: 5vh;
 }
@@ -661,31 +666,31 @@ p {
 .about__paragraph {
     color: #fff;
     padding: 3rem;
-    font-size: 2.3rem;
+    font-size: 1.9rem;
+    line-height: 1.6;
 }
 
 .cta-container {
-    height: 20vh;
+    padding: 0 0 4rem 0;
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
-
-    /* to-del */
-    height: 40vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
 }
 
-/* to-del */
+.cta-heartbeat {
+    -webkit-animation: heartbeat 4s ease-in-out 2s infinite both;
+            animation: heartbeat 4s ease-in-out 2s infinite both;
+}
+
+.cta-heartbeat:hover {
+    -webkit-animation: none;
+            animation: none;
+}
+
 .cta {
-    margin: 2rem 0;
-}
-
-.cta:first-child {
     padding: 1rem 2rem;
     border-radius: 85px;
     border-color: rgba(204, 200, 255, 0.1);
@@ -700,77 +705,92 @@ p {
     transition: all 0.3s ease 0s;
 }
 
-.cta:first-child:hover {
+.cta:hover {
     background-color: #0eb394;
-    /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
     box-shadow: 0px 15px 20px rgba(14, 179, 148,0.4);
-    -webkit-transition: background-color 300ms ease-in;
-    transition: background-color 300ms ease-in;
     -webkit-transform: translateY(-7px);
             transform: translateY(-7px);
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
-.cta:first-child i {
+
+.cta i {
     font-size: 1.6rem;
 }
 
-.cta:first-child a {
+.cta a {
     color: #fff;
 }
 
+@-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    5% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    9% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    17% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    23% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
 
-
-.cta:last-child {
-    padding: 1rem 2rem;
-    border-radius: 85px;
-    border-color: rgba(204, 200, 255, 0.1);
-    background-color: #fff;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    letter-spacing: 1.6px;
-    cursor: pointer;
-    outline: none;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-}
-
-.cta:last-child:hover {
-    background-color: #2EE59D;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    -webkit-transition: background-color 300ms ease-in;
-    transition: background-color 300ms ease-in;
-    -webkit-transform: translateY(-7px);
-            transform: translateY(-7px);
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-}
-.cta:last-child i {
-    font-size: 1.6rem;
-    color: #4AB7A3;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-}
-
-.cta:last-child a {
-    color: #2E2E2E;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-}
-
-.cta:last-child:hover a {
-    color: #fff;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-}
-
-.cta:last-child:hover i {
-    font-size: 1.6rem;
-    color: #fff;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-}
+@keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    5% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    9% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    17% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    23% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
 
 
 /* TEAM SECTION */
@@ -1009,6 +1029,10 @@ p {
     color: #868f9b;
 }
 
+.contact-desc a {
+    color: #868f9b;
+}
+
 
 /* FOOTER */
 
@@ -1232,8 +1256,16 @@ p {
         height: 7.4rem;
     }
 
+    .cta a {
+        font-size: 2.2rem;
+    }
+
+    .cta i {
+        font-size: 2.2rem;
+    }
+
     .about__paragraph {
-        font-size: 3.6rem;
+        font-size: 3rem;
     }
 
     .about__paragraph:first-child {
@@ -1653,10 +1685,6 @@ p {
         width: 10rem;
     }
 
-    .about__paragraph {
-        font-size: 2rem;
-    }
-
     .content-section__header--team {
         margin-bottom: 3rem;
     }
@@ -1709,10 +1737,6 @@ p {
 
     .content-section__body--services {
         grid-template-rows: 1fr 3.5fr
-    }
-
-    .about__paragraph {
-        font-size: 2rem;
     }
 
     .content-section__header--team {
@@ -1775,11 +1799,6 @@ p {
 /* Targeting IE 10&11 */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
-    body {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-    }
-
     .page-header {
         position: fixed;
         top: 0;
@@ -1819,6 +1838,10 @@ p {
         padding-top: 10rem;
     }
 
+    .bg-white--top {
+        display: block;
+    }
+
     .services__items {
         display: -webkit-box;
         display: flex;
@@ -1841,15 +1864,6 @@ p {
     .content-section__body--about {
         width: 70%;
     }
-
-    /* .team {
-        background-color: #fff;
-    } */
-
-    /* .team::after {
-        display: none;
-    } */
-
 
     .contact {
         min-height: auto;
