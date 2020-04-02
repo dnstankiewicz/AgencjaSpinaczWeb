@@ -795,7 +795,7 @@ p {
 
 /* TEAM SECTION */
 
-/* rescaling imgs for tests */
+/* rescaling imgs */
 .team__miniature {
     height: 7rem;
     width: auto;
@@ -807,11 +807,7 @@ p {
 .team__photo {
     height: 100%;
     width: auto;
-    -webkit-filter: grayscale(20%);
-            filter: grayscale(20%);
 }
-
-/* rescaling test ends TO-DEL */
 
 .team {
     background-color: #2E2E2E;
