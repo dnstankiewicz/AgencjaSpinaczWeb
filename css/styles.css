@@ -391,8 +391,6 @@ p {
     margin: 0 auto;
 }
 
-
-
 .services__item {
     display: -webkit-box;
     display: flex;
@@ -461,12 +459,15 @@ p {
 }
 
 .descriptions__items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     position: relative;
     overflow: hidden;
 }
 
 .descriptions__item {
-    position: absolute;
+    grid-area: 1/1/1/1;
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -476,7 +477,6 @@ p {
 }
 
 .descriptions__item--active {
-    position: relative;
     -webkit-animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
             animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;   
     z-index: 10;
@@ -806,7 +806,6 @@ p {
 
 .team__photo {
     height: 100%;
-    width: auto;
 }
 
 .team {
@@ -828,13 +827,7 @@ p {
             transform-origin: top left;
 }
 
-.section-container--team {
-    -webkit-box-pack: justify;
-            justify-content: space-between;
-}
-
 .content-section__header--team {
-    margin-top: 9rem;
     margin-bottom: 0;
 }
 
@@ -849,6 +842,7 @@ p {
 }
 
 .team__right {
+    row-gap: 5rem;
     height: 100%;
     display: grid;
     grid-template-rows: 10rem 1fr;
@@ -860,27 +854,32 @@ p {
 }
 
 .team__photos {
-    max-height: 70vh;
-    height: 100%;
-    width: 100%;
+    /* max-height: 70vh; */
+    /* height: 100%; */
+    height: 50rem;
     display: -webkit-box;
-    display: flex;
+    display: grid;
+    justify-items: center;
     -webkit-box-pack: center;
             justify-content: center;
-    -webkit-box-align: end;
-            align-items: flex-end;
+    -webkit-box-align: center;
+            align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     overflow: hidden;
 }
 
 .team__photo {
-    position: absolute;
+    grid-area: 1/1/1/1;
     opacity: 0;
+    width: auto;
+    /* margin: 0 auto; */
+    height: 50rem;
     -webkit-transition: opacity 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
     transition: opacity 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
 }
 
 .team__photo--active {
-    position: relative;
     opacity: 1;
     -webkit-transition: opacity 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
     transition: opacity 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
@@ -901,15 +900,16 @@ p {
 }
 
 .team__descriptions {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-            align-items: center;
+    display: grid;
+    -webkit-box-pack: center;
+            justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     overflow: hidden;
 }
 
 .team__description {
-    position: absolute;
+    grid-area: 1/1/1/1;
     padding: 0 4rem;
     right: 0;
     text-align: center;
@@ -917,7 +917,6 @@ p {
 }
 
 .team__description--active {
-    position: relative;
     -webkit-animation: slide-in-blurred-right 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
             animation: slide-in-blurred-right 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     z-index: 10;
@@ -1269,7 +1268,7 @@ p {
     }
 
     .content-section__header--team {
-        margin-top: 10rem;
+        /* margin-top: 10rem; */
         margin-bottom: 0;
     }
 
@@ -1540,6 +1539,10 @@ p {
 
     .section-container--team {
         justify-content: space-around;
+    }
+
+    .content-section__header--team {
+        padding-top: 8rem;
     }
 
     .content-section__body--services {
@@ -1853,6 +1856,18 @@ p {
         padding-top: 10rem;
     }
 
+    .descriptions__items {
+        display: block;
+    }
+
+    .descriptions__item {
+        position: absolute;
+    }
+
+    .descriptions__item--active {
+        position: relative;
+    }
+
     .about-container {
         width: 100%;
     }
@@ -1882,7 +1897,24 @@ p {
     }
 
     .team__photos {
+        max-height: 70vh;
+        height: 100%;
         width: 40%;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: end;
+                align-items: flex-end;
+        overflow: hidden;
+    }
+
+    .team__photo {
+        position: absolute;
+    }
+
+    .team__photo--active {
+        position: relative;
     }
 
     .team__right {
@@ -1899,7 +1931,19 @@ p {
     }
 
     .team__descriptions {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: center;
+                align-items: center;
         padding-top: 10rem;
+    }
+
+    .team__description {
+        position: absolute;
+    }
+
+    .team__description--active {
+        position: relative;
     }
 
     .page-footer {
