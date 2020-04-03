@@ -1146,8 +1146,8 @@ p {
 .hvr-underline-from-left {
     display: inline-block;
     vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
+    /* -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0); */
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
@@ -1160,7 +1160,7 @@ p {
     right: 100%;
     bottom: 0;
     background: #4AB7A3;
-    height: 2px;
+    height: 1.5px;
     -webkit-transition-property: right;
     transition-property: right;
     -webkit-transition-duration: 0.3s;
