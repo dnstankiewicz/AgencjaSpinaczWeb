@@ -373,6 +373,7 @@ p {
     width: 90%;
     display: grid;
     grid-template-rows: 1fr 4fr;
+    grid-row-gap: 4rem;
     row-gap: 4rem;
     -webkit-box-align: initial;
             align-items: initial;
@@ -383,9 +384,11 @@ p {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    grid-column-gap: 2.4rem;
     -webkit-column-gap: 2.4rem;
        -moz-column-gap: 2.4rem;
             column-gap: 2.4rem;
+    grid-row-gap: 1.4rem;
     row-gap: 1.4rem;
     text-align: center;
     margin: 0 auto;
@@ -691,6 +694,7 @@ p {
 }
 
 .cta {
+    color: #fff;
     padding: 1rem 2rem;
     border-radius: 85px;
     border-color: rgba(204, 200, 255, 0.1);
@@ -716,10 +720,6 @@ p {
 
 .cta i {
     font-size: 1.6rem;
-}
-
-.cta a {
-    color: #fff;
 }
 
 @-webkit-keyframes heartbeat {
@@ -835,6 +835,7 @@ p {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 2rem;
     -webkit-column-gap: 2rem;
        -moz-column-gap: 2rem;
             column-gap: 2rem;
@@ -842,6 +843,7 @@ p {
 }
 
 .team__right {
+    grid-row-gap: 5rem;
     row-gap: 5rem;
     height: 100%;
     display: grid;
@@ -1221,6 +1223,7 @@ p {
     }
 
     .content-section__body--services {
+        grid-row-gap: 8rem;
         row-gap: 8rem;
     }
 
@@ -1334,6 +1337,7 @@ p {
     }
 
     .content-section__body--services {
+        grid-row-gap: 3rem;
         row-gap: 3rem;
     }
 
@@ -1363,6 +1367,7 @@ p {
     }
 
     .content-section__body--services {
+        grid-row-gap: 2.8rem;
         row-gap: 2.8rem;
     } 
 
@@ -1582,7 +1587,9 @@ p {
             "one one two two three three"
             ". four four five five .";
         grid-template-columns: auto;
+        grid-row-gap: 4rem;
         row-gap: 4rem;
+        grid-column-gap: 0;
         -webkit-column-gap: 0;
            -moz-column-gap: 0;
                 column-gap: 0;
@@ -1628,6 +1635,7 @@ p {
         grid-template-rows: repeat(3,1fr);
         margin-top: 0;
         margin-bottom: 4rem;
+        grid-row-gap: 3rem;
         row-gap: 3rem;
     }
 
@@ -1652,6 +1660,7 @@ p {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2,1fr);
         height: initial;
+        grid-row-gap: 2rem;
         row-gap: 2rem;
     }
 
@@ -1766,6 +1775,7 @@ p {
     }
 
     .contact-container {
+        grid-row-gap: initial;
         row-gap: initial;
     }
 
@@ -1789,9 +1799,6 @@ p {
     .team__miniature:last-child {
         margin: 0;
     }
-
-
-
 }
 
 
@@ -1839,6 +1846,10 @@ p {
 
     .bg-white--top {
         display: block;
+    }
+
+    .content-section__body--services {
+        min-height: 100vh;
     }
 
     .services__items {
@@ -1897,7 +1908,7 @@ p {
     }
 
     .team__photos {
-        max-height: 70vh;
+        max-height: 100vh;
         height: 100%;
         width: 40%;
         display: -webkit-box;
@@ -1931,6 +1942,7 @@ p {
     }
 
     .team__descriptions {
+        min-height: 100vh;
         display: -webkit-box;
         display: flex;
         -webkit-box-align: center;
