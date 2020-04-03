@@ -867,8 +867,10 @@ p {
     display: -webkit-box;
     display: grid;
     justify-items: center;
-    justify-content: center;
-    align-items: flex-start;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+            align-items: flex-start;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     overflow: hidden;
