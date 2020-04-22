@@ -1,4 +1,4 @@
 # AgencjaSpinaczWeb
-Website developed for Agencja Spinacz
+Website developed for marketing agency Agencja Spinacz
 
-https://dnstankiewicz.github.io/AgencjaSpinaczWeb/
+www.spinaczagencja.pl
